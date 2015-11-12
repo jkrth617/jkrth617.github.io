@@ -1,0 +1,20 @@
+#main-info{
+	margin-top:10%; 
+}
+
+#top-half{
+	background-color: #cccccc;
+}
+
+.navbar-nav{
+	margin:auto;
+	margin-left:auto;
+	width: 30%;
+	border: 1px solid black;
+}
+
+.container{
+	border: 1px solid red;
+	text-align: center;
+}
+
