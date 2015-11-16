@@ -1,13 +1,6 @@
 $(document).on('ready', function (e) {
 
-  $.ajax({
-    url:"http://jkrth617.github.io/info/about.html",
-    type:"get",
-  }).then(function(response) {
-    $('#info-content').html(response);
-  }).fail(function(deffered) {
-    alert("Sorry, There was a problem fetching the 'about me' data");
-  });
+  ajaxLoadInfo();
 
   $('.navbar-nav li a').on('click', function (event) {
     event.preventDefault();
@@ -19,4 +12,20 @@ $(document).on('ready', function (e) {
 var changeCurrentTab = function ($target) {
   $('#currently-on').removeAttr('id');
   $target.attr('id', 'currently-on');
+};
+
+var ajaxLoadInfo = function ($targetLink) {
+  var myUrl = "http://jkrth617.github.io/info/about.html";
+  var myType = "GET";
+  if($targetLink){
+    myUrl = $targetLink.attr("href");
+  }
+  $.ajax({
+    url: myUrl,
+    type: myType,
+  }).then(function(response) {
+    $('[data-role="info-target"]').html(response);
+  }).fail(function(deffered) {
+    alert("Sorry, There was a problem fetching the data");
+  });
 };
