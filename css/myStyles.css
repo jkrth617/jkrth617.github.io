@@ -41,3 +41,83 @@
 .loading-wheel{
   display:none;
 }
+
+#resume{
+  margin: auto;
+  width: 70%;
+}
+
+#resume-top{
+  background-color: grey;
+  text-align:center;
+  font-size: 30px;
+  color: green;
+}
+
+#left-side{
+  width: 60%;
+  padding-left:15px;
+  float: left;
+  display: inline-block;
+  text-align: justify;
+}
+
+#right-col{
+  width: 35%;
+  float: right;
+  display: inline-block;
+}
+
+.resume-header{
+  text-align: left;
+  font-size: 20px;
+  color: green;
+  border-bottom: 2px solid green;
+}
+
+.resume-subheader{
+  margin-top: 5px;
+}
+
+.resume-subheader a{
+  text-align: left;
+  font-size: 15px;
+  color: black;
+}
+
+.resume-employment-left{
+  margin-top: 5px;
+  float: left;
+  display: inline-block;
+  font-size: 15px;
+  color: black;  
+}
+
+.resume-employment-container{
+  display:block;
+}
+
+.resume-employment-right{
+  text-align: right;
+  margin-top: 5px;
+  float: right;
+  display: inline-block;
+  font-size: 15px;
+  color: black;  
+}
+
+.resume-content{
+  clear:left;
+  clear:right;
+  font-size: 10px;
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+
+.resume-content ul{
+  margin-bottom: 3px;
+}
+
+.greyed-out{
+  color:grey;
+}
