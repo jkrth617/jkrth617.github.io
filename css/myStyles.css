@@ -1,20 +1,28 @@
 #main-info{
-	margin-top:10%; 
+  margin-top:10%; 
 }
 
 #top-half{
-	background-color: #cccccc;
+  background-color: #cccccc;
 }
 
 .navbar-nav{
-	margin:auto;
-	margin-left:auto;
-	width: 30%;
-	border: 1px solid black;
+  margin:auto;
+  margin-left:auto;
+  /*width: 30%;*/
+  /*border: 1px solid black;*/
+}
+
+.navbar-nav li a{
+  border-radius: 20px 20px 0 0 ;
 }
 
 .container{
-	border: 1px solid red;
-	text-align: center;
+  /*border: 1px solid red;*/
+  text-align: center;
+}
+
+#currently-on{
+  background-color: #eee; 
 }
 
