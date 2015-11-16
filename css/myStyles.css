@@ -73,6 +73,7 @@
   font-size: 20px;
   color: green;
   border-bottom: 2px solid green;
+  margin-bottom: 5px;
 }
 
 .resume-subheader{
@@ -85,8 +86,12 @@
   color: black;
 }
 
+.resume-skill-header{
+  font-weight: bold;
+  font-size: 10px;
+}
+
 .resume-employment-left{
-  margin-top: 5px;
   float: left;
   display: inline-block;
   font-size: 15px;
@@ -99,7 +104,6 @@
 
 .resume-employment-right{
   text-align: right;
-  margin-top: 5px;
   float: right;
   display: inline-block;
   font-size: 15px;
@@ -107,8 +111,7 @@
 }
 
 .resume-content{
-  clear:left;
-  clear:right;
+  clear:both;
   font-size: 10px;
   padding-top: 5px;
   padding-bottom: 15px;
@@ -120,4 +123,17 @@
 
 .greyed-out{
   color:grey;
+}
+
+.resume-contact{
+  font-size: 14;
+}
+
+.contact-icon{
+  width:20px;
+  height:20px;
+}
+
+.resume-content a{
+  color: black;
 }
