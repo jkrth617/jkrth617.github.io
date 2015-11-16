@@ -15,6 +15,7 @@ var changeCurrentTab = function ($target) {
 };
 
 var ajaxLoadInfo = function ($targetLink) {
+  $('.loading-wheel').show();
   var myUrl = "http://jkrth617.github.io/info/about.html";
   var myType = "GET";
   if($targetLink){
@@ -24,8 +25,10 @@ var ajaxLoadInfo = function ($targetLink) {
     url: myUrl,
     type: myType,
   }).then(function(response) {
+    $('.loading-wheel').hide();
     $('[data-role="info-target"]').html(response);
   }).fail(function(deffered) {
+    $('.loading-wheel').hide();
     alert("Sorry, There was a problem fetching the data");
   });
 };
