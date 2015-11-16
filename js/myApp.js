@@ -5,7 +5,10 @@ $(document).on('ready', function (e) {
   $('.navbar-nav li a').on('click', function (event) {
     event.preventDefault();
     var $self = $(this);
-    changeCurrentTab($self);
+    if ($self.attr('id') !== "currently-on"){
+      changeCurrentTab($self);
+      ajaxLoadInfo($self);
+    }
   })
 });
 
