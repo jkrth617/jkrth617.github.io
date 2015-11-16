@@ -33,3 +33,6 @@
   background-color: #eee; 
 }
 
+.loading-wheel{
+  display:none;
+}
