@@ -9,8 +9,6 @@
 .navbar-nav{
   margin:auto;
   margin-left:auto;
-  /*width: 30%;*/
-  /*border: 1px solid black;*/
 }
 
 .navbar-nav li a{
@@ -18,8 +16,17 @@
 }
 
 .container{
-  /*border: 1px solid red;*/
   text-align: center;
+}
+
+.info-content{
+  background-color: #eee;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  margin-right: 5.5%;
+  margin-left: 5.5%;
 }
 
 #currently-on{
