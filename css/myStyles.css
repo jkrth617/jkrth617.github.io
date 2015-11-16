@@ -1,9 +1,15 @@
+body{
+  background-image: url("../images/lensflare.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 #main-info{
   margin-top:10%; 
 }
 
 #top-half{
-  background-color: #cccccc;
+  /*background-color: #cccccc;*/
 }
 
 .navbar-nav{
