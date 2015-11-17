@@ -29,6 +29,7 @@ var ajaxLoadInfo = function ($targetLink) {
     type: myType,
   }).then(function(response) {
     $('.loading-wheel').hide();
+    debugger;
     $('[data-role="info-target"]').html(response);
   }).fail(function(deffered) {
     $('.loading-wheel').hide();
