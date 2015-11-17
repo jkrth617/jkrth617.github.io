@@ -30,9 +30,14 @@ var ajaxLoadInfo = function ($targetLink) {
   }).then(function(response) {
     $('.loading-wheel').hide();
     debugger;
+    var bodyContent = parseHTMLResponse(response)
     $('[data-role="info-target"]').html(response);
   }).fail(function(deffered) {
     $('.loading-wheel').hide();
     alert("Sorry, There was a problem fetching the data");
   });
+};
+
+var parseHTMLResponse = function (htmlString) {
+  return $(htmlString).filter('body')[0];//not hitting any matches
 };
