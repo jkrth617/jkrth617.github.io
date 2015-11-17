@@ -1,7 +1,7 @@
 body{
-  background-image: url("../images/lensflare.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url("../images/blue-pattern.png");
+  background-repeat: repeat-y;
+  /*background-size: cover;*/
 }
 
 a{
@@ -14,7 +14,7 @@ a:hover{
 
 .welcome-box{
   border-radius: 20px;
-  border: 5px solid #b3d9ff;
+  border: 5px inset #b3d9ff;
   background-color: #80bfff;
   padding:3px;
   width:60%;
@@ -35,7 +35,13 @@ a:hover{
 }
 
 .navbar-nav li a{
+  color: #660066;
+  background-color: #80bfff;
+  opacity: .6;
   border-radius: 20px 20px 0 0 ;
+}
+.navbar-nav li a:hover{
+  opacity: .8;
 }
 
 .my-navbar{
@@ -50,7 +56,7 @@ a:hover{
 #bottom-container{
   overflow:hidden;
   border-radius: 20px;
-  border: 5px solid #b3d9ff;
+  border: 5px inset #b3d9ff;
   border-top:none; 
   background-color: #80bfff;
   padding-left: 15px;
@@ -59,10 +65,12 @@ a:hover{
   padding-bottom: 3%;
   margin-right: 5.5%;
   margin-left: 5.5%;
+  margin-bottom: 5.5%;
   height:100%;
 }
 
 #currently-on{
+  opacity: 1;
   background-color: #80bfff;
   border-radius: 20px 20px 0 0 ;
 
