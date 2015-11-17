@@ -144,3 +144,7 @@ body{
 .resume-content a{
   color: black;
 }
+
+.content-important{
+  font-weight:bold; 
+}
