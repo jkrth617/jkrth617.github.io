@@ -1103,7 +1103,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #18bc9c;
+  color: #F26107;
   text-decoration: underline;
 }
 a:focus {
@@ -3129,8 +3129,8 @@ fieldset[disabled] .btn-primary.active {
 }
 .btn-success {
   color: #ffffff;
-  background-color: #18bc9c;
-  border-color: #18bc9c;
+  background-color: #F26107;
+  border-color: #F26107;
 }
 .btn-success:hover,
 .btn-success:focus,
@@ -3308,7 +3308,7 @@ fieldset[disabled] .btn-danger.active {
   background-color: #ffffff;
 }
 .btn-link {
-  color: #18bc9c;
+  color: #F26107;
   font-weight: normal;
   border-radius: 0;
 }
@@ -3329,7 +3329,7 @@ fieldset[disabled] .btn-link {
 }
 .btn-link:hover,
 .btn-link:focus {
-  color: #18bc9c;
+  color: #F26107;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -3904,7 +3904,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav .open > a:hover,
 .nav .open > a:focus {
   background-color: #ecf0f1;
-  border-color: #18bc9c;
+  border-color: #F26107;
 }
 .nav .nav-divider {
   height: 1px;
