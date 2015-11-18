@@ -104,6 +104,11 @@ section.success a:hover, a:hover{
   display:none;
 }
 
+.margin-spacing{
+  margin-right:20px; 
+  margin-left:20px; 
+}
+
 #resume-sheet{
   margin: auto;
   width: 80%;
