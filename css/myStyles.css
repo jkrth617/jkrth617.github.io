@@ -17,6 +17,9 @@ header{
   background-color: rgba(12,61,196,1);  
 }
 
+hr.star-light:after, hr.star-primary:after {
+  content:none;
+}
 /*bootstrap above*/
 
 body{
@@ -25,12 +28,12 @@ body{
   /*background-size: cover;*/
 }
 
-a{
-  color: #660066;
+section.success a, a{
+  color: #FFC62B;
 }
 
-a:hover{
-  color: #b300b2
+section.success a:hover, a:hover{
+  color: #F26107;
 }
 
 .welcome-box{
@@ -109,11 +112,19 @@ a:hover{
   border-radius: 4px;
 }
 
+#resume-sheet a{
+  color:black;
+}
+
+#resume-sheet a{
+  color:black;
+}
+
 #resume-top{
   background-color: grey;
   text-align:center;
   font-size: 30px;
-  color: green;
+  color: #0C3DC4;
 }
 
 #left-side{
@@ -136,8 +147,8 @@ a:hover{
 .resume-header{
   text-align: left;
   font-size: 20px;
-  color: green;
-  border-bottom: 2px solid green;
+  color: #0C3DC4;
+  border-bottom: 2px solid #0C3DC4;
   margin-bottom: 5px;
 }
 
