@@ -6,11 +6,15 @@
 }
 
 section.success {
-  background-color: rgba(28,240,255,0.5);
+  background-color: rgba(12,61,196,0.5);
   padding-top: 15px;
   padding-bottom: 15px;
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+header{
+  background-color: rgba(12,61,196,1);  
 }
 
 /*bootstrap above*/
