@@ -1,3 +1,20 @@
+.success{
+  overflow: hidden;
+  width: 90%;
+  margin: auto;
+  border-radius: 20px;
+}
+
+section.success {
+  background-color: rgba(28,240,255,0.5);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/*bootstrap above*/
+
 body{
   background-image: url("../images/blue-pattern.png");
   background-repeat: repeat-y;
@@ -34,12 +51,12 @@ a:hover{
   margin:auto;
 }
 
-.navbar-nav li a{
+/*.navbar-nav li a{
   color: #660066;
   background-color: #80bfff;
   opacity: .6;
   border-radius: 20px 20px 0 0 ;
-}
+}*/
 .navbar-nav li a:hover{
   opacity: .8;
 }
@@ -80,9 +97,9 @@ a:hover{
   display:none;
 }
 
-#resume{
+#resume-sheet{
   margin: auto;
-  width: 70%;
+  width: 80%;
   background-color: #ffffff;
   overflow:hidden;
   border-radius: 4px;
@@ -101,12 +118,15 @@ a:hover{
   float: left;
   display: inline-block;
   text-align: justify;
+  padding-left: 5%;
 }
 
 #right-col{
   width: 35%;
   float: right;
   display: inline-block;
+  padding-right:;
+
 }
 
 .resume-header{
@@ -130,10 +150,13 @@ a:hover{
 .resume-skill-header{
   font-weight: bold;
   font-size: 10px;
+  text-align: left;
+  color: black;
 }
 
 .resume-employment-left{
   float: left;
+  text-align: left;
   display: inline-block;
   font-size: 15px;
   color: black;  
@@ -156,6 +179,8 @@ a:hover{
   font-size: 10px;
   padding-top: 5px;
   padding-bottom: 15px;
+  text-align: left;
+  color: black;
 }
 
 .resume-content ul{
