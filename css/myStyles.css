@@ -68,6 +68,11 @@ section.success a:hover, a:hover{
   opacity: .8;
 }
 
+.project-img{
+  width: 25%;
+  height: 25%;
+}
+
 .my-navbar{
   margin: auto;
   width: 30%;
