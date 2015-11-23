@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sudoku</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/underScore.js"></script>
+    <!-- <style type="text/css"></style> -->
+    <script type="text/javascript" src="js/sudoku-logic.js"></script>
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type="text/css" href="css/myStyles.css">
+    <link rel="stylesheet" type="text/css" href="css/sudoku.css">
+  </head>
+  <body>
+  <div id = "sudoku-holder">
+    <div id = "title">Jake's sudoku solver</div>
+    <div id="col1">
+      <form>
+        <div id="row0">
+          <input class="form-input" name="num" id="cell0" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell1" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell2" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell3" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell4" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell5" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell6" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell7" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell8" type="text" placeholder=":)">
+        </div>
+        <div id="row1">
+          <input class="form-input" name="num" id="cell9" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell10" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell11" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell12" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell13" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell14" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell15" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell16" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell17" type="text" placeholder=":)">
+        </div>
+        <div id="row2">
+          <input class="form-input" name="num" id="cell18" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell19" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell20" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell21" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell22" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell23" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell24" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell25" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell26" type="text" placeholder=":)">
+        </div>
+        <div id="row3">
+          <input class="form-input" name="num" id="cell27" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell28" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell29" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell30" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell31" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell32" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell33" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell34" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell35" type="text" placeholder=":)">
+        </div>
+        <div id="row4">
+          <input class="form-input" name="num" id="cell36" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell37" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell38" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell39" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell40" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell41" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell42" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell43" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell44" type="text" placeholder=":)">
+        </div>
+        <div id="row5">
+          <input class="form-input" name="num" id="cell45" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell46" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell47" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell48" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell49" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell50" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell51" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell52" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell53" type="text" placeholder=":)">
+        </div>
+        <div id="row6">
+          <input class="form-input" name="num" id="cell54" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell55" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell56" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell57" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell58" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell59" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell60" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell61" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell62" type="text" placeholder=":)">
+        </div>
+        <div id="row7">
+          <input class="form-input" name="num" id="cell63" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell64" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell65" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell66" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell67" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell68" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell69" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell70" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell71" type="text" placeholder=":)">
+        </div>
+        <div id="row8">
+          <input class="form-input" name="num" id="cell72" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell73" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell74" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell75" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell76" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell77" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell78" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell79" type="text" placeholder=":)">
+          <input class="form-input" name="num" id="cell80" type="text" placeholder=":)">
+        </div>
+      </form>
+    </div>
+    <div id="col2">
+      <button id="clear">clear</button>
+      <button id="solve">solve</button>
+      <div id="error">"Error in solving the board. make sure the board you entered is valid and that you only entered numbers between 1 and 9"</div>
+    </div>
+  </div>
+  </body>
+</html>

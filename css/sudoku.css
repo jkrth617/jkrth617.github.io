@@ -1,0 +1,34 @@
+.form-input{
+	width:30px;
+	height: 30px;
+	margin: 2px;
+}
+
+#sudoku-holder{
+	width: 70%;
+	margin:auto;
+}
+#title{
+	color: white;
+	font-size: 30px;
+}
+
+form{
+	background-color: black;
+}
+
+#col1{
+	display:inline-block;
+}
+
+#col2{
+	background-color: black;
+	border: solid 2px blue;
+	display:inline-block;
+}
+
+#error{
+	display: none;
+}
+
+
