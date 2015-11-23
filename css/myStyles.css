@@ -25,7 +25,20 @@ header{
 hr.star-light:after, hr.star-primary:after {
   content:none;
 }
+
+.img-popup{
+  width: 100px;
+  height: 100px;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption {
+  background: rgba(255,198,43,.9);
+}
 /*bootstrap above*/
+
+a{
+  color: #F7BA0F
+}
 
 body{
   background-image: url("../images/blue-pattern.png");
@@ -63,12 +76,6 @@ section.success a:hover, a:hover{
   margin:auto;
 }
 
-/*.navbar-nav li a{
-  color: #660066;
-  background-color: #80bfff;
-  opacity: .6;
-  border-radius: 20px 20px 0 0 ;
-}*/
 .navbar-nav li a:hover{
   opacity: .8;
 }
@@ -84,9 +91,8 @@ section h2{
 }
 
 .project-img{
-  width: 80%;
-  height: 80%;
-}
+  width: 200px;
+  height: 200px}
 
 .my-navbar{
   margin: auto;
