@@ -1,0 +1,37 @@
+body{
+  background-image: url("../images/space.png");
+  background-size: 100%;
+}
+
+#space-ship{
+  width: 20px;
+  height: 20px;
+  content: url("../images/spaceship.png");
+  position: absolute;
+  top:50%;
+  left:650px;
+}
+
+.bullet{
+  content: url("../images/missile.png"); 
+  width: 10px;
+  height: 10px;
+  top:50%;
+  left:0px;
+  position: absolute;
+}
+
+.alien{
+  content: url("../images/ufo.png");
+  width: 20px;
+  height: 20px;
+  top:0px;
+  left:0px;
+  position: absolute; 
+}
+
+#in-game-message{
+  color:red;
+  font-size: 30px;
+  background-color: black;
+}
